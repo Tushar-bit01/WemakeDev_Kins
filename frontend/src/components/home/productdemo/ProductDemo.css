@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+
+::webkit-scrollbar{
+    display:none;
+}
+
+section{
+    position:relative;
+    width:100%;
+    height:100svh;
+    padding:1.5rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.lottie-container{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:1.5rem;
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+}
+
+.lottie-container .lottie{
+    position: relative;
+    width:10rem;
+    height:10rem;
+    transform:translateX(2rem);
+    will-change: transform;
+    z-index:1;
+}
+
+.lottie-container .hero-img{
+    width:65%;
+    aspect-ratio: 16/9;
+    border-radius: 0.75rem;
+    transform-origin: top right;
+    will-change: transform;
+    overflow:hidden;
+}
+
+@media(max-width:1000px){
+    .about h1{
+        width:100%;
+    }
+    .lottie-container .lottie{
+        width:4rem;
+        height:4rem;
+        transform:translateX(1rem);
+    }
+
+    .lottie-container .hero-img{
+        width:100%;
+        
+    }
+}

@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: font1;
+  src: url(/fonts/wellfound.otf);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(/fonts/logo.ttf);
+}
+
+@font-face {
+  font-family: font3;
+  src: url(/fonts/FigtreeNormal.ttf);
+}
+
+@font-face {
+  font-family: font4;
+  src: url(/fonts/pp.otf);
+}
+
+@font-face {
+  font-family: font5;
+  src: url(/fonts/InstrumentSerif-Regular.ttf);
+}
+@font-face {
+  font-family: font6;
+  src: url(/fonts/Inkfree.ttf);
+}
