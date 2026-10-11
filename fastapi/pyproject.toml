@@ -1,0 +1,29 @@
+[project]
+name = "kins-solarimage"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]>=0.135.2",
+    "onnxruntime-gpu>=1.24.4",
+    "pydantic>=2.12.5",
+    "shapely>=2.1.2",
+    "ultralytics>=8.4.31",
+    "torch==2.5.1+cu124",
+    "torchvision==0.20.1+cu124",
+    "opencv-python==4.10.0.84",
+    "basicsr==1.4.2",
+    "dotenv>=0.9.9",
+    "onnxruntime>=1.24.4",
+    "onnx>=1.21.0",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
+torchvision = { index = "pytorch-cu124" }
